@@ -1,4 +1,4 @@
-# Ex-2-GENERATION OF LEXICAL TOKENS LEX FLEX TOOL
+<img width="1480" height="238" alt="image" src="https://github.com/user-attachments/assets/c3fb657b-d4ea-44cc-afad-cbe9e2f9cd36" /># Ex-2-GENERATION OF LEXICAL TOKENS LEX FLEX TOOL
 # Date:13-09-2025
 # Register No.:212224040302
 # AIM
@@ -34,8 +34,8 @@
 7.	Compile that file with C compiler and verify the output.
 
 # INPUT
+expr2.l
 ```
-
 %{
  int COMMENT=0;
 %}
@@ -79,8 +79,29 @@ yylex(); printf("\n\n"); return 0;
 return 0;
 }
 ```
+cd1.l
+```
+%{
+#include <stdio.h>
+%}
+
+%%
+[A-Za-z]+        { printf("Your name is: %s\n", yytext); }
+[ \t\n]          { /* Ignore whitespace */ }
+.                { printf("UNKNOWN: %s\n", yytext); }
+%%
+
+int yywrap(void) { return 1; }
+
+int main(void) {
+    printf("Enter your name: ");
+    yylex();
+    return 0;
+}
+```
 # OUTPUT
 <img width="1477" height="753" alt="image" src="https://github.com/user-attachments/assets/eb9f05b6-54b7-4410-907d-912eca509c7b" />
+<img width="1480" height="237" alt="image" src="https://github.com/user-attachments/assets/a7d2ba10-ce28-4f6c-93eb-6925ada460ce" />
 
 # RESULT
 ## The lexical analyzer is implemented using lex and the output is verified.
