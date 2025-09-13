@@ -1,4 +1,4 @@
-<img width="1480" height="238" alt="image" src="https://github.com/user-attachments/assets/c3fb657b-d4ea-44cc-afad-cbe9e2f9cd36" /># Ex-2-GENERATION OF LEXICAL TOKENS LEX FLEX TOOL
+# Ex-2-GENERATION OF LEXICAL TOKENS LEX FLEX TOOL
 # Date:13-09-2025
 # Register No.:212224040302
 # AIM
